@@ -6,9 +6,11 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
+use Error::Pure qw(err);
 use File::Path qw(rmtree);
 use File::Spec::Functions qw(catfile);
 use File::Temp qw(tempdir);
+use IO::CaptureOutput qw(capture_exec);
 use Image::Random;
 use Video::Pattern;
 
@@ -95,10 +97,15 @@ sub create {
 	# Create video.
 	my $images_path = catfile($self->{'temp_dir'},
 		'%03d.'.$self->{'image_type'});
-	my $command = 'ffmpeg -r '.$self->{'fps'}.' -i '.$images_path.' '.
-		$path.' 2> /dev/null';
-	system $command;
-	# XXX Check error.
+	my $command = 'ffmpeg -loglevel error -nostdin -r '.$self->{'fps'}.
+		' -i '.$images_path.' '.$path;
+	my ($stdout, $stderr, $success, $exit_code)
+		= capture_exec($command);
+	if ($stderr) {
+		my @stderr = split m/\n/ms, $stderr;
+		err "Error with command '$command'.",
+			map { ('STDERR', $_) } @stderr;
+	}
 
 	# Remove temporary directory.
 	rmtree $self->{'temp_dir'};
