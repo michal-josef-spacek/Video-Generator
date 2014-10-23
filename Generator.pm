@@ -89,7 +89,7 @@ sub new {
 
 # Create random video.
 sub create {
-	my ($self, $path) = @_;
+	my ($self, $out_path) = @_;
 
 	# Create images.
 	$self->{'video_pattern'}->create($self->{'temp_dir'});
@@ -98,7 +98,7 @@ sub create {
 	my $images_path = catfile($self->{'temp_dir'},
 		'%03d.'.$self->{'image_type'});
 	my $command = 'ffmpeg -loglevel error -nostdin -r '.$self->{'fps'}.
-		' -i '.$images_path.' '.$path;
+		' -i '.$images_path.' '.$out_path;
 	my ($stdout, $stderr, $success, $exit_code)
 		= capture_exec($command);
 	if ($stderr) {
@@ -129,7 +129,7 @@ Video::Generator - Perl class for video generation.
 
  use Video::Generator;
  my $obj = Video::Generator->new(%parameters);
- my $type = $obj->create($output_path);
+ my $type = $obj->create($out_path);
 
 =head1 METHODS
 
@@ -202,7 +202,7 @@ Video::Generator - Perl class for video generation.
 
 =back
 
-=item C<create($path)>
+=item C<create($out_path)>
 
  Create video.
  Returns undef.
