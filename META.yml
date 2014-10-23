@@ -1,5 +1,5 @@
 ---
-abstract: 'Perl class for video generator.'
+abstract: 'Perl class for video generation.'
 author:
   - 'Michal Spacek <skim@cpan.org>'
 build_requires:

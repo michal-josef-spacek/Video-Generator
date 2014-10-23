@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'Perl class for video generator.';
+abstract 'Perl class for video generation.';
 author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Video-Generator';
