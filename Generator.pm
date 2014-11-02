@@ -12,6 +12,7 @@ use File::Spec::Functions qw(catfile);
 use File::Temp qw(tempdir);
 use IO::CaptureOutput qw(capture_exec);
 use Image::Random;
+use Video::Delay::Const;
 use Video::Pattern;
 
 # Version.
@@ -262,6 +263,7 @@ L<File::Spec::Functions>,
 L<File::Temp>,
 L<IO::CaptureOutput>,
 L<Image::Random>,
+L<Video::Delay::Const>,
 L<Video::Pattern>.
 
 =head1 SEE ALSO

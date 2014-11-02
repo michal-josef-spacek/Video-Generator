@@ -117,7 +117,8 @@ EXAMPLE
 
 DEPENDENCIES
     Class::Utils, Error::Pure, File::Path, File::Spec::Functions,
-    File::Temp, IO::CaptureOutput, Image::Random, Video::Pattern.
+    File::Temp, IO::CaptureOutput, Image::Random, Video::Delay::Const,
+    Video::Pattern.
 
 SEE ALSO
     Image::Random, Image::Select.
