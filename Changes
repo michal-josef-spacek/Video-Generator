@@ -1,4 +1,5 @@
 0.02
+ - Fix dependencies.
  - Load Video::Delay::Const, if i am using it.
 
 0.01 2014-11-02T07:54:03+01:00
