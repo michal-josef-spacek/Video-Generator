@@ -41,4 +41,4 @@ resources:
   homepage: https://github.com/tupinek/Video-Generator
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/tupinek/Video-Generator
-version: '0.02'
+version: '0.03'
