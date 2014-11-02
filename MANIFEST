@@ -14,6 +14,7 @@ Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
+SIGNATURE
 t/Video-Generator/00-use.t
 t/Video-Generator/01-version.t
 t/Video-Generator/02-pod_coverage.t
