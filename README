@@ -121,7 +121,11 @@ DEPENDENCIES
     Video::Pattern.
 
 SEE ALSO
-    Image::Random, Image::Select.
+    Image::Random
+        Perl class for creating random image.
+
+    Image::Select
+        Perl class for creating random image.
 
 REPOSITORY
     <https://github.com/tupinek/Video-Generator>.

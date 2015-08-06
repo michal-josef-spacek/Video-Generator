@@ -268,8 +268,17 @@ L<Video::Pattern>.
 
 =head1 SEE ALSO
 
-L<Image::Random>,
-L<Image::Select>.
+=over
+
+=item L<Image::Random>
+
+Perl class for creating random image.
+
+=item L<Image::Select>
+
+Perl class for creating random image.
+
+=back
 
 =head1 REPOSITORY
 
