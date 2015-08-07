@@ -116,9 +116,9 @@ EXAMPLE
      #     Stream #0:0[0x1e0]: Video: mpeg1video, yuv420p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 104857 kb/s, 60 fps, 60 tbr, 90k tbn, 60 tbc
 
 DEPENDENCIES
-    Class::Utils, Error::Pure, File::Path, File::Spec::Functions,
-    File::Temp, IO::CaptureOutput, Image::Random, Video::Delay::Const,
-    Video::Pattern.
+    Class::Utils, Error::Pure, FFmpeg::Command, File::Path,
+    File::Spec::Functions, File::Temp, IO::CaptureOutput, Image::Random,
+    Readonly, Video::Delay::Const, Video::Pattern.
 
 SEE ALSO
     Image::Random

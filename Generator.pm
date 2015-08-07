@@ -7,13 +7,18 @@ use warnings;
 # Modules.
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
+use FFmpeg::Command;
 use File::Path qw(rmtree);
 use File::Spec::Functions qw(catfile);
 use File::Temp qw(tempdir);
 use IO::CaptureOutput qw(capture_exec);
 use Image::Random;
+use Readonly;
 use Video::Delay::Const;
 use Video::Pattern;
+
+# Constants.
+Readonly::Scalar our $SPACE => q{ };
 
 # Version.
 our $VERSION = 0.03;
@@ -96,14 +101,16 @@ sub create {
 	$self->{'video_pattern'}->create($self->{'temp_dir'});
 
 	# Create video.
+	my $ffmpeg = FFmpeg::Command->new;
 	my $images_path = catfile($self->{'temp_dir'},
 		'%03d.'.$self->{'image_type'});
-	my $command = 'ffmpeg -loglevel error -nostdin -r '.$self->{'fps'}.
-		' -i '.$images_path.' '.$out_path;
-	my ($stdout, $stderr, $success, $exit_code)
-		= capture_exec($command);
-	if ($stderr) {
-		my @stderr = split m/\n/ms, $stderr;
+	my @command_options = ('-loglevel', 'error', '-r', $self->{'fps'},
+		'-i', $images_path, $out_path);
+	$ffmpeg->options(@command_options);
+	$ffmpeg->exec;
+	if ($ffmpeg->stderr) {
+		my @stderr = split m/\n/ms, $ffmpeg->stderr;
+		my $command = join $SPACE, @command_options;
 		err "Error with command '$command'.",
 			map { ('STDERR', $_) } @stderr;
 	}
@@ -258,11 +265,13 @@ Video::Generator - Perl class for video generation.
 
 L<Class::Utils>,
 L<Error::Pure>,
+L<FFmpeg::Command>,
 L<File::Path>,
 L<File::Spec::Functions>,
 L<File::Temp>,
 L<IO::CaptureOutput>,
 L<Image::Random>,
+L<Readonly>,
 L<Video::Delay::Const>,
 L<Video::Pattern>.
 

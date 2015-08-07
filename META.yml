@@ -28,11 +28,13 @@ no_index:
 requires:
   Class::Utils: 0.03
   Error::Pure: 0.17
+  FFmpeg::Command: 0
   File::Path: 0
   File::Spec::Functions: 0
   File::Temp: 0
   IO::CaptureOutput: 0
   Image::Random: 0
+  Readonly: 0
   Video::Delay::Const: 0
   Video::Pattern: 0
   perl: 5.6.0
