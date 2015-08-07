@@ -1,4 +1,4 @@
-0.03
+0.03 2015-08-07T13:53:06+02:00
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SEE ALSO section in doc.
  - Rewrite usage of ffmpeg to FFmpeg::Command class.
