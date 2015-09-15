@@ -8,9 +8,12 @@ use inc::Module::Install;
 # Definition.
 abstract 'Perl class for video generation.';
 author 'Michal Spacek <skim@cpan.org>';
+author_requires 'Test::Pod' => 0;
+author_requires 'Test::Pod::Coverage' => 0;
 license 'bsd';
 name 'Video-Generator';
 readme_from 'Generator.pm';
+recursive_author_tests('xt');
 requires 'Class::Utils' => 0.03;
 requires 'Error::Pure' => 0.17;
 requires 'FFmpeg::Command' => 0;
@@ -31,8 +34,6 @@ test_requires 'English' => 0;
 test_requires 'File::Object' => 0.05;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
-test_requires 'Test::Pod' => 0;
-test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
 version '0.05';
 

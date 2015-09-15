@@ -1,4 +1,5 @@
 0.05
+ - Move admin tests to xt/ directory.
 
 0.04 2015-09-15T22:28:12+02:00
  - Add tests for constructor.
