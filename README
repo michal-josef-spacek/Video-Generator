@@ -45,7 +45,8 @@ METHODS
 
             *       "image_type"
 
-                     Image type.
+                     Image type used for implicit 'image_generator' parameter.
+                     List of supported types: bmp, gif, jpeg, png, pnm, raw, sgi, tga, tiff.
                      Defult image type is 'bmp'.
 
             *       "temp_dir"

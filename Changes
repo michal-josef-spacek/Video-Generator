@@ -2,6 +2,7 @@
  - Add 'verbose' parameter.
  - Fix ERRORS section in doc.
  - Improve SEE ALSO section in doc.
+ - Improve doc for 'image_type' parameter.
 
 0.03 2015-08-07T13:53:06+02:00
  - Improve LICENSE AND COPYRIGHT section in doc.
