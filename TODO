@@ -3,7 +3,6 @@ TODO
 3. FFMPEG program existing check.
 4. Pridat testy.
 5. Do prikladu v dokumentaci pridat argument pro cestu.
-6. Pridat verbose mod.
 7.
 
 Applied
@@ -13,3 +12,6 @@ OK [20141023] skim
 
 2. Man page.
 OK [20141024] skim
+
+6. Pridat verbose mod.
+OK [20150915] skim

@@ -1,5 +1,6 @@
 Changes
 examples/ex1.pl
+examples/ex2.pl
 Generator.pm
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
