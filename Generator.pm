@@ -240,6 +240,11 @@ Video::Generator - Perl class for video generation.
  new():
          From Class::Utils:
                  Unknown parameter '%s'.
+         From Image::Random:
+                 Image type '%s' doesn't supported.
+         From Video::Pattern:
+                 Parameter 'duration' must be numeric value.
+                 Parameter 'fps' must be numeric value.
 
  create():
          Error with command '%s'.
