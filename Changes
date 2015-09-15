@@ -1,4 +1,5 @@
 0.04
+ - Add tests for constructor.
  - Add 'verbose' parameter.
  - Fix ERRORS section in doc.
  - Improve SEE ALSO section in doc.

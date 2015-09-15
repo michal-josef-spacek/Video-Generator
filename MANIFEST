@@ -20,3 +20,4 @@ t/Video-Generator/00-use.t
 t/Video-Generator/01-version.t
 t/Video-Generator/02-pod_coverage.t
 t/Video-Generator/03-pod.t
+t/Video-Generator/04-new.t
