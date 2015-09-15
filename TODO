@@ -3,7 +3,8 @@ TODO
 3. FFMPEG program existing check.
 4. Pridat testy.
 5. Do prikladu v dokumentaci pridat argument pro cestu.
-7.
+7. Pridat check na objekty v konstruktoru.
+8.
 
 Applied
 =======
