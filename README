@@ -163,6 +163,12 @@ SEE ALSO
     Image::Select
         Perl class for creating random image.
 
+    Video::Delay
+        Perl classes for delays between frames generation.
+
+    Video::Pattern
+        Video class for frame generation.
+
 REPOSITORY
     <https://github.com/tupinek/Video-Generator>.
 

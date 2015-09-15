@@ -337,6 +337,14 @@ Perl class for creating random image.
 
 Perl class for creating random image.
 
+=item L<Video::Delay>
+
+Perl classes for delays between frames generation.
+
+=item L<Video::Pattern>
+
+Video class for frame generation.
+
 =back
 
 =head1 REPOSITORY
