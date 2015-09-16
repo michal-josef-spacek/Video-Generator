@@ -21,7 +21,7 @@ use Video::Pattern;
 Readonly::Scalar our $SPACE => q{ };
 
 # Version.
-our $VERSION = 0.05;
+our $VERSION = 0.06;
 
 # Constructor.
 sub new {
@@ -373,6 +373,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.05
+0.06
 
 =cut
