@@ -5,7 +5,7 @@ use warnings;
 # Modules.
 use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 9;
+use Test::More 'tests' => 10;
 use Test::NoWarnings;
 use Video::Generator;
 
@@ -42,8 +42,9 @@ eval {
 		'duration' => undef,
 	);
 };
-is($EVAL_ERROR, "Parameter 'duration' must be numeric value.\n",
-	"Parameter 'duration' must be numeric value.");
+is($EVAL_ERROR, "Parameter 'duration' must be numeric value or numeric value ".
+	"with time suffix (s/ms).\n", "Parameter 'duration' must be numeric ".
+	"value or numeric value with time suffix (s/ms).");
 clean();
 
 # Test.
@@ -52,8 +53,20 @@ eval {
 		'duration' => 'xxx',
 	);
 };
-is($EVAL_ERROR, "Parameter 'duration' must be numeric value.\n",
-	"Parameter 'duration' must be numeric value.");
+is($EVAL_ERROR, "Parameter 'duration' must be numeric value or numeric value ".
+	"with time suffix (s/ms).\n", "Parameter 'duration' must be numeric ".
+	"value or numeric value with time suffix (s/ms).");
+clean();
+
+# Test.
+eval {
+	Video::Generator->new(
+		'duration' => '10000x',
+	);
+};
+is($EVAL_ERROR, "Parameter 'duration' must be numeric value or numeric value ".
+	"with time suffix (s/ms).\n", "Parameter 'duration' must be numeric ".
+	"value or numeric value with time suffix (s/ms).");
 clean();
 
 # Test.
