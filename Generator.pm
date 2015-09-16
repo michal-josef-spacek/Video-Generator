@@ -172,7 +172,10 @@ Video::Generator - Perl class for video generation.
 
 =item * C<duration>
 
- Duration.
+ Video duration used for implicit 'video_pattern' parameter.
+ Possible suffixes are:
+ - ms for milisendons.
+ - s for seconds.
  Default value is 10000 (10s).
 
 =item * C<fps>
@@ -244,7 +247,7 @@ Video::Generator - Perl class for video generation.
          From Image::Random:
                  Image type '%s' doesn't supported.
          From Video::Pattern:
-                 Parameter 'duration' must be numeric value.
+                 Parameter 'duration' must be numeric value or numeric value with time suffix (s/ms).
                  Parameter 'fps' must be numeric value.
 
  create():
