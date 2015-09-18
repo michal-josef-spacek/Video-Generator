@@ -34,7 +34,7 @@ requires:
   Image::Random: 0
   Readonly: 0
   Video::Delay::Const: 0
-  Video::Pattern: 0.07
+  Video::Pattern: 0.08
   perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Video-Generator

@@ -43,8 +43,8 @@ eval {
 	);
 };
 is($EVAL_ERROR, "Parameter 'duration' must be numeric value or numeric value ".
-	"with time suffix (s/ms).\n", "Parameter 'duration' must be numeric ".
-	"value or numeric value with time suffix (s/ms).");
+	"with time suffix.\n", "Parameter 'duration' must be numeric ".
+	"value or numeric value with time suffix.");
 clean();
 
 # Test.
@@ -54,8 +54,8 @@ eval {
 	);
 };
 is($EVAL_ERROR, "Parameter 'duration' must be numeric value or numeric value ".
-	"with time suffix (s/ms).\n", "Parameter 'duration' must be numeric ".
-	"value or numeric value with time suffix (s/ms).");
+	"with time suffix.\n", "Parameter 'duration' must be numeric ".
+	"value or numeric value with time suffix.");
 clean();
 
 # Test.
@@ -65,8 +65,8 @@ eval {
 	);
 };
 is($EVAL_ERROR, "Parameter 'duration' must be numeric value or numeric value ".
-	"with time suffix (s/ms).\n", "Parameter 'duration' must be numeric ".
-	"value or numeric value with time suffix (s/ms).");
+	"with time suffix.\n", "Parameter 'duration' must be numeric ".
+	"value or numeric value with time suffix.");
 clean();
 
 # Test.

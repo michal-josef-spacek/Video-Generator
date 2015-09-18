@@ -176,6 +176,8 @@ Video::Generator - Perl class for video generation.
  Possible suffixes are:
  - ms for milisendons.
  - s for seconds.
+ - min for minute.
+ - h for hour.
  Default value is 10000 (10s).
 
 =item * C<fps>
@@ -247,7 +249,7 @@ Video::Generator - Perl class for video generation.
          From Image::Random:
                  Image type '%s' doesn't supported.
          From Video::Pattern:
-                 Parameter 'duration' must be numeric value or numeric value with time suffix (s/ms).
+                 Parameter 'duration' must be numeric value or numeric value with time suffix.
                  Parameter 'fps' must be numeric value.
 
  create():
