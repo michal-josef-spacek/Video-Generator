@@ -118,7 +118,7 @@ sub create {
 	if ($ffmpeg->stderr) {
 		my @stderr = split m/\n/ms, $ffmpeg->stderr;
 		my $command = join $SPACE, @command_options;
-		err "Error with command '$command'.",
+		err "Error with command 'ffmpeg $command'.",
 			map { ('STDERR', $_) } @stderr;
 	}
 	if ($self->{'verbose'}) {
