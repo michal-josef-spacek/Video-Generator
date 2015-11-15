@@ -172,7 +172,13 @@ SEE ALSO
         Perl class for creating random image.
 
     Image::Select
-        Perl class for creating random image.
+        Selecting image from images directory.
+
+    Image::Select::Array
+        Selecting image from list with checking.
+
+    Image::Select::Date
+        Selecting image from images directory by date.
 
     Video::Delay
         Perl classes for delays between frames generation.

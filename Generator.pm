@@ -346,7 +346,15 @@ Perl class for creating random image.
 
 =item L<Image::Select>
 
-Perl class for creating random image.
+Selecting image from images directory.
+
+=item L<Image::Select::Array>
+
+Selecting image from list with checking.
+
+=item L<Image::Select::Date>
+
+Selecting image from images directory by date.
 
 =item L<Video::Delay>
 
