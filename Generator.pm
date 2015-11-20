@@ -39,6 +39,9 @@ sub new {
 	# Frames per second.
 	$self->{'fps'} = 60;
 
+	# FFmpeg video codec.
+	$self->{'ffmpeg_video_codec'} = undef;
+
 	# Image generator.
 	$self->{'image_generator'} = undef;
 
@@ -112,7 +115,11 @@ sub create {
 	my $images_path = catfile($self->{'temp_dir'},
 		'%03d.'.$self->{'image_type'});
 	my @command_options = ('-loglevel', 'error', '-r', $self->{'fps'},
-		'-i', $images_path, $out_path);
+		'-i', $images_path,
+		$self->{'ffmpeg_video_codec'}
+			? ('-c:v', $self->{'ffmpeg_video_codec'})
+			: (),
+		$out_path);
 	$ffmpeg->options(@command_options);
 	$ffmpeg->exec;
 	if ($ffmpeg->stderr) {
@@ -179,6 +186,11 @@ Video::Generator - Perl class for video generation.
  - min for minute.
  - h for hour.
  Default value is 10000 (10s).
+
+=item * C<ffmpeg_video_codec>
+
+ FFmpeg video codec.
+ Default value is undef, use default ffmpeg.
 
 =item * C<fps>
 
