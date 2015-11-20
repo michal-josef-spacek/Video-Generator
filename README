@@ -28,6 +28,11 @@ METHODS
                      - h for hour.
                      Default value is 10000 (10s).
 
+            *       "ffmpeg_pixel_format"
+
+                     FFmpeg pixel format.
+                     Default value is undef, use default ffmpeg.
+
             *       "ffmpeg_video_codec"
 
                      FFmpeg video codec.

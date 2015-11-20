@@ -39,6 +39,9 @@ sub new {
 	# Frames per second.
 	$self->{'fps'} = 60;
 
+	# FFmpeg pixel format.
+	$self->{'ffmpeg_pixel_format'} = undef;
+
 	# FFmpeg video codec.
 	$self->{'ffmpeg_video_codec'} = undef;
 
@@ -119,6 +122,10 @@ sub create {
 		$self->{'ffmpeg_video_codec'}
 			? ('-c:v', $self->{'ffmpeg_video_codec'})
 			: (),
+		$self->{'ffmpeg_pixel_format'}
+			? ('-pix_fmt', $self->{'ffmpeg_pixel_format'})
+			:(),
+		'-pix_fmt', 'yuv420p',
 		$out_path);
 	$ffmpeg->options(@command_options);
 	$ffmpeg->exec;
@@ -186,6 +193,11 @@ Video::Generator - Perl class for video generation.
  - min for minute.
  - h for hour.
  Default value is 10000 (10s).
+
+=item * C<ffmpeg_pixel_format>
+
+ FFmpeg pixel format.
+ Default value is undef, use default ffmpeg.
 
 =item * C<ffmpeg_video_codec>
 
