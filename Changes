@@ -1,4 +1,4 @@
-0.07
+0.07 2015-11-20T11:36:09+01:00
  - Add 'ffmpeg_video_codec' parameter.
  - Add modules to SEE ALSO section in doc.
  - Improve error (adding ffmpeg command to begin).
