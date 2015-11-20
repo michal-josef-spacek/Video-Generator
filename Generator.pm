@@ -181,7 +181,7 @@ Video::Generator - Perl class for video generation.
  Default value is 10000 (10s).
 
 =item * C<fps>
- 
+
  Frames per second.
  Default value is 60.
 
