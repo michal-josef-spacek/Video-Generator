@@ -5,7 +5,8 @@ TODO
 5. Do prikladu v dokumentaci pridat argument pro cestu.
 7. Pridat check na objekty v konstruktoru.
 8. Konstanty predelat na Readonly promenne.
-9.
+9. doc - metody predelat na =head2
+10.
 
 Applied
 =======
