@@ -2,6 +2,7 @@
  - Add missing LICENSE file.
  - Fix Makefile.PL fails with no '.' in @INC.
  - Improve LICENSE AND COPYRIGHT section in doc.
+ - Improve SYNOPSIS section in doc.
  - Update Module::Install to 1.19 version.
  - Update author github username.
  - Update author name.

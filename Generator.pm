@@ -160,6 +160,7 @@ Video::Generator - Perl class for video generation.
 =head1 SYNOPSIS
 
  use Video::Generator;
+
  my $obj = Video::Generator->new(%parameters);
  my $type = $obj->create($out_path);
 
