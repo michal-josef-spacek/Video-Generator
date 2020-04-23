@@ -1,7 +1,7 @@
 ---
 abstract: 'Perl class for video generation.'
 author:
-  - 'Michal Spacek <skim@cpan.org>'
+  - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
   English: 0
   ExtUtils::MakeMaker: 6.36
