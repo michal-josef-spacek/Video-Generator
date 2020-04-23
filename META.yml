@@ -41,4 +41,4 @@ resources:
   homepage: https://github.com/michal-josef-spacek/Video-Generator
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/michal-josef-spacek/Video-Generator
-version: '0.09'
+version: '0.10'
