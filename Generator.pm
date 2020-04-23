@@ -392,7 +392,7 @@ Video class for frame generation.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Video-Generator>.
+L<https://github.com/michal-josef-spacek/Video-Generator>.
 
 =head1 AUTHOR
 

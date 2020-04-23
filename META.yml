@@ -38,7 +38,7 @@ requires:
   perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Video-Generator
-  homepage: https://github.com/tupinek/Video-Generator
+  homepage: https://github.com/michal-josef-spacek/Video-Generator
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/Video-Generator
+  repository: git://github.com/michal-josef-spacek/Video-Generator
 version: '0.09'
