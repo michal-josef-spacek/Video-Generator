@@ -1,4 +1,5 @@
-0.09
+0.09 
+ - Add missing LICENSE file.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.19 version.
  - Update author github username.
