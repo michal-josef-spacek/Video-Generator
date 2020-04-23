@@ -1,10 +1,8 @@
 package Video::Generator;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use FFmpeg::Command;
@@ -20,7 +18,6 @@ use Video::Pattern;
 # Constants.
 Readonly::Scalar our $SPACE => q{ };
 
-# Version.
 our $VERSION = 0.09;
 
 # Constructor.
@@ -283,11 +280,9 @@ Video::Generator - Perl class for video generation.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use File::Path qw(rmtree);
  use File::Spec::Functions qw(catfile);
  use File::Temp qw(tempdir);
@@ -316,11 +311,9 @@ Video::Generator - Perl class for video generation.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use File::Path qw(rmtree);
  use File::Spec::Functions qw(catfile);
  use File::Temp qw(tempdir);

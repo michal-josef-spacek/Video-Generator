@@ -110,11 +110,9 @@ ERRORS
                      ..
 
 EXAMPLE1
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use File::Path qw(rmtree);
      use File::Spec::Functions qw(catfile);
      use File::Temp qw(tempdir);
@@ -142,11 +140,9 @@ EXAMPLE1
      #     Stream #0:0[0x1e0]: Video: mpeg1video, yuv420p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 104857 kb/s, 60 fps, 60 tbr, 90k tbn, 60 tbc
 
 EXAMPLE2
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use File::Path qw(rmtree);
      use File::Spec::Functions qw(catfile);
      use File::Temp qw(tempdir);
