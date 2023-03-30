@@ -4,7 +4,6 @@ TODO
 4. Pridat testy.
 5. Do prikladu v dokumentaci pridat argument pro cestu.
 7. Pridat check na objekty v konstruktoru.
-8. Konstanty predelat na Readonly promenne.
 10.
 
 Applied
@@ -19,4 +18,7 @@ OK [20141024] skim
 OK [20150915] skim
 
 9. doc - metody predelat na =head2
+OK [20230330] skim
+
+8. Konstanty predelat na Readonly promenne.
 OK [20230330] skim

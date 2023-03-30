@@ -15,6 +15,9 @@ use Video::Delay::Const;
 use Video::Pattern;
 
 # Constants.
+Readonly::Scalar our $DEFAULT_DURATION => 10000;
+Readonly::Scalar our $DEFAULT_VIDEO_HEIGHT => 1080;
+Readonly::Scalar our $DEFAULT_VIDEO_WIDTH => 1920;
 Readonly::Scalar our $SPACE => q{ };
 
 our $VERSION = 0.10;
@@ -30,7 +33,7 @@ sub new {
 	$self->{'delay_generator'} = undef;
 
 	# Duration.
-	$self->{'duration'} = 10000;
+	$self->{'duration'} = $DEFAULT_DURATION;
 
 	# Frames per second.
 	$self->{'fps'} = 60;
@@ -57,8 +60,8 @@ sub new {
 	$self->{'video_pattern'} = undef;
 
 	# Sizes.
-	$self->{'height'} = 1080;
-	$self->{'width'} = 1920;
+	$self->{'height'} = $DEFAULT_VIDEO_HEIGHT;
+	$self->{'width'} = $DEFAULT_VIDEO_WIDTH;
 
 	# Process params.
 	set_params($self, @params);
