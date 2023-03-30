@@ -20,7 +20,7 @@ Readonly::Scalar our $DEFAULT_VIDEO_HEIGHT => 1080;
 Readonly::Scalar our $DEFAULT_VIDEO_WIDTH => 1920;
 Readonly::Scalar our $SPACE => q{ };
 
-our $VERSION = 0.10;
+our $VERSION = 0.11;
 
 # Constructor.
 sub new {
@@ -410,6 +410,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.10
+0.11
 
 =cut
