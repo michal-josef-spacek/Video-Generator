@@ -1,4 +1,5 @@
 0.10
+ - Remove obsolete dependency to IO::CaptureOutput.
  - Update copyright years.
 
 0.09 2020-04-23T13:22:32+02:00

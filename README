@@ -171,8 +171,8 @@ EXAMPLE2
 
 DEPENDENCIES
     Class::Utils, Error::Pure, FFmpeg::Command, File::Path,
-    File::Spec::Functions, File::Temp, IO::CaptureOutput, Image::Random,
-    Readonly, Video::Delay::Const, Video::Pattern.
+    File::Spec::Functions, File::Temp, Image::Random, Readonly,
+    Video::Delay::Const, Video::Pattern.
 
 SEE ALSO
     Image::Random

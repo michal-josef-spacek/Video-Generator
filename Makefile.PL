@@ -21,7 +21,6 @@ requires 'FFmpeg::Command' => 0;
 requires 'File::Path' => 0;
 requires 'File::Spec::Functions' => 0;
 requires 'File::Temp' => 0;
-requires 'IO::CaptureOutput' => 0;
 requires 'Image::Random' => 0;
 requires 'Readonly' => 0;
 requires 'Video::Delay::Const' => 0;

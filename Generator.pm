@@ -9,7 +9,6 @@ use FFmpeg::Command;
 use File::Path qw(rmtree);
 use File::Spec::Functions qw(catfile);
 use File::Temp qw(tempdir);
-use IO::CaptureOutput qw(capture_exec);
 use Image::Random;
 use Readonly;
 use Video::Delay::Const;
@@ -348,7 +347,6 @@ L<FFmpeg::Command>,
 L<File::Path>,
 L<File::Spec::Functions>,
 L<File::Temp>,
-L<IO::CaptureOutput>,
 L<Image::Random>,
 L<Readonly>,
 L<Video::Delay::Const>,

@@ -30,7 +30,6 @@ requires:
   File::Path: 0
   File::Spec::Functions: 0
   File::Temp: 0
-  IO::CaptureOutput: 0
   Image::Random: 0
   Readonly: 0
   Video::Delay::Const: 0
