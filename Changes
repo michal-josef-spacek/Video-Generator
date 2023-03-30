@@ -1,4 +1,5 @@
 0.10
+ - Add names for example files.
  - Remove obsolete dependency to IO::CaptureOutput.
  - Rewrite POD methods to use =head2.
  - Rewrite some constants to named constants.

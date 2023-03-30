@@ -286,6 +286,8 @@ Returns undef.
 
 =head1 EXAMPLE1
 
+=for comment filename=random_video_in_temp_and_ffprobe.pl
+
  use strict;
  use warnings;
 
@@ -316,6 +318,8 @@ Returns undef.
  #     Stream #0:0[0x1e0]: Video: mpeg1video, yuv420p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 104857 kb/s, 60 fps, 60 tbr, 90k tbn, 60 tbc
 
 =head1 EXAMPLE2
+
+=for comment filename=random_video_in_temp_verbose.pl
 
  use strict;
  use warnings;
