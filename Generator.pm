@@ -165,11 +165,11 @@ Video::Generator - Perl class for video generation.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new(%parameters)>
+ my $obj = Video::Generator->new(%parameters);
 
- Constructor.
+Constructor.
 
 =over 8
 
@@ -255,12 +255,15 @@ Video::Generator - Perl class for video generation.
 
 =back
 
-=item C<create($out_path)>
+Returns instance of object.
 
- Create video.
- Returns undef.
+=head2 C<create>
 
-=back
+ my $type = $obj->create($out_path);
+
+Create video.
+
+Returns undef.
 
 =head1 ERRORS
 

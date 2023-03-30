@@ -1,5 +1,6 @@
 0.10
  - Remove obsolete dependency to IO::CaptureOutput.
+ - Rewrite POD methods to use =head2.
  - Update copyright years.
 
 0.09 2020-04-23T13:22:32+02:00
